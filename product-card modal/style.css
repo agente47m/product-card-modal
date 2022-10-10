@@ -36,7 +36,9 @@ body{
     width: 340px;
     background-image: url("./images/image-product-mobile.jpg");
     background-position: center;
-    background-size:cover
+    background-size:cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .main-container-img{
@@ -100,7 +102,20 @@ body{
     font-size: 0.8em;
     font-weight: bold;
     border: none;
+    display: flex;
+    align-items: center;    /* justificar de manera vertical*/
+    justify-content: center; /* justificar de manera horizontal*/
+
     
+    
+}
+.detaills-product__add-card:hover{
+    background-color: var(--Very-dark-blue);
+    cursor: pointer;
+    
+}
+.detaills-product__add-card-img{
+    padding-right: 3px;
 }
 
 @media screen and (min-width: 1440px){
@@ -130,6 +145,7 @@ body{
         background-position: center;
         background-size:cover
     }
+ 
     .detaills-product{
         padding-left: 25px;
         padding-right: 20px;
